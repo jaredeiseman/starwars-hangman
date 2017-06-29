@@ -25,7 +25,6 @@ Starwars.prototype.guess = function(guessedLetter, displayLetter, displayPiece) 
       whiffed = false;
 
       this.correctLetters += 1;
-      console.log(this.correctLetters);
     }
   });
 
@@ -69,8 +68,6 @@ Starwars.prototype.getWord = function(displayGame) {
 
       this.solutionActualLength = this.word.replace(/-/g, '').length;
 
-      console.log("length: " + this.solutionActualLength);
-      console.log(this.solution);
       displayGame(this.word);
     });
 }
